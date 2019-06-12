@@ -38,6 +38,7 @@ const Authors = () => (
     <Route path="/authors/1" component={Author1}/>
     <Route path="/authors/2" component={Author2}/>
     <Route path="/authors/3" component={Author3}/>
+
   </Switch>
 )
 
@@ -49,7 +50,7 @@ const Author1 = () => {
 			<h3>Лев Николаевич Толстой</h3>
 			<p><b>Дата рождения:</b>28.08.1828</p>
 			<p><b>Дата смерти:</b>07.11.1910</p>
-			<Button type="primary" href="/">HOME</Button>
+			<Link to={'/'}>BACK</Link>
 		</div>
 	)
 }
@@ -61,7 +62,7 @@ const Author2 = () => {
 			<h3>Алан Александр Милн</h3>
 			<p><b>Дата рождения:</b>18.01.1882</p>
 			<p><b>Дата смерти:</b>31.01.1956</p>
-			<Button type="primary" href="/">HOME</Button>
+			<Link to={'/'}>BACK</Link>
 		</div>
 	)
 }
@@ -73,12 +74,10 @@ const Author3 = () => {
 			<h3>Поляков Илья Сергеевич</h3>
 			<p><b>Дата рождения:</b>19.12.1954</p>
 			<p><b>Дата смерти:</b>13.06.2015</p>
-			<Button type="primary" href="/">HOME</Button>
+		 	<Link to={'/'}>BACK</Link>
 		</div>
 	)
 }
-
-
 
 class ContentFeed extends React.Component {
 	constructor(){
